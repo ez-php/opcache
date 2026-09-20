@@ -27,13 +27,13 @@ Add `config/opcache.php`:
 
 return [
     // Absolute path for the generated preload script.
-    'output_file' => base_path('preload.php'),
+    'output_file' => dirname(__DIR__) . '/preload.php',
 
     // Directories to scan for PHP files.
     'paths' => [
-        base_path('vendor/ez-php/framework/src'),
-        base_path('vendor/ez-php/contracts/src'),
-        base_path('app'),
+        dirname(__DIR__) . '/vendor/ez-php/framework/src',
+        dirname(__DIR__) . '/vendor/ez-php/contracts/src',
+        dirname(__DIR__) . '/app',
     ],
 
     // Filename glob patterns to exclude.
