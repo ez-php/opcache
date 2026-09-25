@@ -29,6 +29,11 @@ use SplFileInfo;
  */
 final class Preloader
 {
+    /**
+     * Preloader Constructor
+     *
+     * @param PreloadConfig $config
+     */
     public function __construct(private readonly PreloadConfig $config)
     {
     }
