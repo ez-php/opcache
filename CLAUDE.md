@@ -276,6 +276,7 @@ src/
 
 tests/
 ├── TestCase.php                    — abstract base
+├── PreloaderServiceProviderTest.php  — Smoke test: PreloaderServiceProvider registers its bindings in a minimal container context without error
 ├── PreloadConfigTest.php           — tests all constructor parameters and getters
 └── PreloaderTest.php               — collect() and generate() with temp directories; covers excludes, subdirs, sorting, require_once, error cases
 ```
