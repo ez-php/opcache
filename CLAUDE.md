@@ -278,7 +278,10 @@ tests/
 ├── TestCase.php                    — abstract base
 ├── PreloaderServiceProviderTest.php  — Smoke test: PreloaderServiceProvider registers its bindings in a minimal container context without error
 ├── PreloadConfigTest.php           — tests all constructor parameters and getters
-└── PreloaderTest.php               — collect() and generate() with temp directories; covers excludes, subdirs, sorting, require_once, error cases
+├── PreloaderTest.php               — collect() and generate() with temp directories; covers excludes, subdirs, sorting, require_once, error cases
+└── Support/
+    ├── FakeConfig.php               — minimal ConfigInterface stub for service provider tests
+    └── FakeContainer.php            — minimal ContainerInterface stub for service provider tests
 ```
 
 ---
